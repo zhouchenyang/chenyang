@@ -1,0 +1,1658 @@
+random: Trying to read entropy from /dev/random
+Configuration file: /home/civil/thesis/EasyAP/hostapd/hostapd_def.conf
+rfkill: initial event: idx=0 type=1 op=0 soft=0 hard=0
+rfkill: initial event: idx=1 type=1 op=0 soft=0 hard=0
+rfkill: initial event: idx=2 type=2 op=0 soft=0 hard=0
+rfkill: initial event: idx=5 type=1 op=0 soft=0 hard=0
+nl80211: Supported cipher 00-0f-ac:1
+nl80211: Supported cipher 00-0f-ac:5
+nl80211: Supported cipher 00-0f-ac:2
+nl80211: Supported cipher 00-0f-ac:4
+nl80211: Supported cipher 00-0f-ac:6
+nl80211: Using driver-based off-channel TX
+nl80211: Use separate P2P group interface (driver advertised support)
+nl80211: interface wlan3 in phy phy3
+nl80211: Set mode ifindex 13 iftype 3 (AP)
+nl80211: Setup AP(wlan3) - device_ap_sme=0 use_monitor=0
+nl80211: Subscribe to mgmt frames with AP handle 0xd087a0
+nl80211: Register frame type=0xb0 nl_handle=0xd087a0 match=
+nl80211: Register frame type=0x0 nl_handle=0xd087a0 match=
+nl80211: Register frame type=0x20 nl_handle=0xd087a0 match=
+nl80211: Register frame type=0xa0 nl_handle=0xd087a0 match=
+nl80211: Register frame type=0xc0 nl_handle=0xd087a0 match=
+nl80211: Register frame type=0xd0 nl_handle=0xd087a0 match=
+nl80211: Register frame type=0x40 nl_handle=0xd087a0 match=
+nl80211: Add own interface ifindex 14
+nl80211: Add own interface ifindex 13
+nl80211: Adding interface wlan3 into bridge br0
+phy: phy3
+BSS count 1, BSSID mask 00:00:00:00:00:00 (0 bits)
+nl80211: Regulatory information - country=00
+nl80211: 2402-2472 @ 40 MHz 20 mBm
+nl80211: 2457-2482 @ 40 MHz 20 mBm
+nl80211: 2474-2494 @ 20 MHz 20 mBm
+nl80211: 5170-5250 @ 40 MHz 20 mBm
+nl80211: 5735-5835 @ 40 MHz 20 mBm
+nl80211: Added 802.11b mode based on 802.11g information
+Completing interface initialization
+Mode: IEEE 802.11g  Channel: 6  Frequency: 2437 MHz
+DFS 0 channels required radar detection
+nl80211: Set freq 2437 (ht_enabled=0, vht_enabled=0, bandwidth=20 MHz, cf1=2437 MHz, cf2=0 MHz)
+RATE[0] rate=10 flags=0x1
+RATE[1] rate=20 flags=0x1
+RATE[2] rate=55 flags=0x1
+RATE[3] rate=110 flags=0x1
+RATE[4] rate=60 flags=0x0
+RATE[5] rate=90 flags=0x0
+RATE[6] rate=120 flags=0x0
+RATE[7] rate=180 flags=0x0
+RATE[8] rate=240 flags=0x0
+RATE[9] rate=360 flags=0x0
+RATE[10] rate=480 flags=0x0
+RATE[11] rate=540 flags=0x0
+hostapd_setup_bss(hapd=0xd09110 (wlan3), first=1)
+wlan3: Flushing old station entries
+nl80211: flush -> DEL_STATION wlan3 (all)
+wlan3: Deauthenticate all stations
+nl80211: send_mlme - noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0xc0 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: Frame command failed: ret=-16 (Device or resource busy) (freq=2437 wait=0)
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=0 addr=(nil) key_idx=0 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=0 addr=(nil) key_idx=1 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=0 addr=(nil) key_idx=2 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=0 addr=(nil) key_idx=3 set_tx=0 seq_len=0 key_len=0
+Using interface wlan3 with hwaddr c4:e9:84:10:6b:df and ssid "MyNetwork"
+Deriving WPA PSK based on passphrase
+SSID - hexdump_ascii(len=9):
+     4d 79 4e 65 74 77 6f 72 6b                        MyNetwork       
+PSK (ASCII passphrase) - hexdump_ascii(len=11): [REMOVED]
+PSK (from passphrase) - hexdump(len=32): [REMOVED]
+random: Got 20/20 bytes from /dev/random
+GMK - hexdump(len=32): [REMOVED]
+Key Counter - hexdump(len=32): [REMOVED]
+WPA: Delay group state machine start until Beacon frames have been configured
+VLAN: vlan_set_name_type(name_type=2)
+nl80211: Set beacon (beacon_set=0)
+nl80211: Beacon head - hexdump(len=60): 80 00 00 00 ff ff ff ff ff ff c4 e9 84 10 6b df c4 e9 84 10 6b df 00 00 00 00 00 00 00 00 00 00 64 00 11 04 00 09 4d 79 4e 65 74 77 6f 72 6b 01 08 82 84 8b 96 0c 12 18 24 03 01 06
+nl80211: Beacon tail - hexdump(len=41): 2a 01 04 32 04 30 48 60 6c 30 14 01 00 00 0f ac 04 01 00 00 0f ac 04 01 00 00 0f ac 02 00 00 7f 08 00 00 00 00 00 00 00 40
+nl80211: ifindex=13
+nl80211: beacon_int=100
+nl80211: dtim_period=2
+nl80211: ssid - hexdump_ascii(len=9):
+     4d 79 4e 65 74 77 6f 72 6b                        MyNetwork       
+nl80211: hidden SSID not in use
+nl80211: privacy=1
+nl80211: auth_algs=0x1
+nl80211: wpa_version=0x2
+nl80211: key_mgmt_suites=0x2
+nl80211: pairwise_ciphers=0x10
+nl80211: group_cipher=0x10
+nl80211: beacon_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: proberesp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+nl80211: assocresp_ies - hexdump(len=10): 7f 08 00 00 00 00 00 00 00 40
+WPA: Start group state machine to set initial keys
+WPA: group state machine entering state GTK_INIT (VLAN-ID 0)
+GTK - hexdump(len=16): [REMOVED]
+WPA: group state machine entering state SETKEYSDONE (VLAN-ID 0)
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=3 addr=0x4a6d8a key_idx=1 set_tx=1 seq_len=0 key_len=16
+   broadcast key
+nl80211: Set wlan3 operstate 0->1 (UP)
+netlink: Operstate: ifindex=13 linkmode=-1 (no change), operstate=6 (IF_OPER_UP)
+wlan3: interface state UNINITIALIZED->ENABLED
+wlan3: AP-ENABLED 
+wlan3: Setup of interface done.
+ctrl_iface not configured!
+RTM_NEWLINK: ifi_index=13 ifname=wlan3 operstate=2 linkmode=0 ifi_flags=0x1003 ([UP])
+RTM_NEWLINK: ifi_index=13 ifname=wlan3 operstate=2 linkmode=0 master=14 ifi_flags=0x1003 ([UP])
+RTM_NEWLINK: ifi_index=13 ifname=wlan3 operstate=2 linkmode=0 master=14 ifi_flags=0x1003 ([UP])
+RTM_NEWLINK: ifi_index=13 ifname=wlan3 master=14 operstate=2 ifi_flags=0x1003 ([UP])
+nl80211: Add ifindex 14 for bridge br0
+nl80211: Add own interface ifindex 14
+RTM_NEWLINK: ifi_index=13 ifname=wlan3 master=14 operstate=6 ifi_flags=0x11043 ([UP][RUNNING][LOWER_UP])
+nl80211: Add ifindex 14 for bridge br0
+nl80211: Add own interface ifindex 14
+RTM_NEWLINK: ifi_index=13 ifname=wlan3 master=14 operstate=6 ifi_flags=0x11043 ([UP][RUNNING][LOWER_UP])
+nl80211: Add ifindex 14 for bridge br0
+nl80211: Add own interface ifindex 14
+RTM_NEWLINK: ifi_index=13 ifname=wlan3 master=14 operstate=6 ifi_flags=0x11043 ([UP][RUNNING][LOWER_UP])
+nl80211: Add ifindex 14 for bridge br0
+nl80211: Add own interface ifindex 14
+RTM_NEWLINK: ifi_index=13 ifname=wlan3 operstate=6 linkmode=0 master=14 ifi_flags=0x11043 ([UP][RUNNING][LOWER_UP])
+VLAN: vlan_newlink(wlan3)
+VLAN: vlan_newlink(wlan3)
+VLAN: vlan_newlink(wlan3)
+VLAN: vlan_newlink(wlan3)
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-64 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-33 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-22 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-24 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-20 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-23 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-23 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-26 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-65 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-81 stype=4 len=133
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-86 stype=4 len=133
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-85 stype=4 len=133
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-65 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-23 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-24 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-33 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: Ignore RTM_NEWLINK event for foreign ifindex 15
+VLAN: vlan_newlink(mon0)
+nl80211: Ignore RTM_NEWLINK event for foreign ifindex 15
+VLAN: vlan_newlink(mon0)
+nl80211: Ignore RTM_NEWLINK event for foreign ifindex 15
+VLAN: vlan_newlink(mon0)
+nl80211: Ignore RTM_NEWLINK event for foreign ifindex 15
+VLAN: vlan_newlink(mon0)
+nl80211: Ignore RTM_NEWLINK event for foreign ifindex 15
+VLAN: vlan_newlink(mon0)
+nl80211: Ignore RTM_NEWLINK event for foreign ifindex 2
+VLAN: vlan_newlink(eth0)
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-76 stype=4 len=143
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-40 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-39 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-37 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-37 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-40 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-40 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+RTM_NEWLINK: ifi_index=13 ifname=wlan3 master=14 operstate=6 ifi_flags=0x11043 ([UP][RUNNING][LOWER_UP])
+nl80211: Add ifindex 14 for bridge br0
+nl80211: Add own interface ifindex 14
+VLAN: vlan_newlink(wlan3)
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-53 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-52 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-45 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-42 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-40 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-44 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-43 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-41 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-39 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-36 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-39 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-70 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-70 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-70 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-73 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-83 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-81 stype=4 len=133
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-86 stype=4 len=133
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-71 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-28 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-30 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-30 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-28 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-30 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-77 stype=4 len=133
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-73 stype=4 len=142
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-74 stype=4 len=133
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-73 stype=4 len=142
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-73 stype=4 len=133
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-42 stype=4 len=149
+nl80211: send_mlme - noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-43 stype=11 len=41
+wlan3: Event RX_MGMT (20) received
+mgmt::auth
+authentication: STA=30:f7:c5:15:ac:6f auth_alg=0 auth_transaction=1 status_code=0 wep=0
+  New STA
+ap_sta_add: register ap_handle_timer timeout for 30:f7:c5:15:ac:6f (300 seconds - ap_max_inactivity)
+wlan3: STA 30:f7:c5:15:ac:6f IEEE 802.11: authentication OK (open system)
+wlan3: STA 30:f7:c5:15:ac:6f MLME: MLME-AUTHENTICATE.indication(30:f7:c5:15:ac:6f, OPEN_SYSTEM)
+wlan3: STA 30:f7:c5:15:ac:6f MLME: MLME-DELETEKEYS.request(30:f7:c5:15:ac:6f)
+authentication reply: STA=30:f7:c5:15:ac:6f auth_alg=0 auth_transaction=2 resp=0 (IE len=0)
+nl80211: send_mlme - noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0xb0 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: Drv Event 60 (NL80211_CMD_FRAME_TX_STATUS) received for wlan3
+nl80211: Frame TX status event
+wlan3: Event TX_STATUS (18) received
+nl80211: Drv Event 60 (NL80211_CMD_FRAME_TX_STATUS) received for wlan3
+nl80211: Frame TX status event
+wlan3: Event TX_STATUS (18) received
+mgmt::auth cb
+wlan3: STA 30:f7:c5:15:ac:6f IEEE 802.11: authenticated
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-41 stype=0 len=96
+wlan3: Event RX_MGMT (20) received
+mgmt::assoc_req
+association request: STA=30:f7:c5:15:ac:6f capab_info=0x431 listen_interval=20
+  new AID 1
+wlan3: STA 30:f7:c5:15:ac:6f IEEE 802.11: association OK (aid 1)
+nl80211: send_mlme - noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x10 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: Drv Event 60 (NL80211_CMD_FRAME_TX_STATUS) received for wlan3
+nl80211: Frame TX status event
+wlan3: Event TX_STATUS (18) received
+mgmt::assoc_resp cb
+wlan3: STA 30:f7:c5:15:ac:6f IEEE 802.11: associated (aid 1)
+wlan3: STA 30:f7:c5:15:ac:6f MLME: MLME-ASSOCIATE.indication(30:f7:c5:15:ac:6f)
+wlan3: STA 30:f7:c5:15:ac:6f MLME: MLME-DELETEKEYS.request(30:f7:c5:15:ac:6f)
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=0 addr=0xd0cd10 key_idx=0 set_tx=1 seq_len=0 key_len=0
+   addr=30:f7:c5:15:ac:6f
+nl80211: sta_remove -> DEL_STATION wlan3 30:f7:c5:15:ac:6f --> -2 (No such file or directory)
+nl80211: Add STA 30:f7:c5:15:ac:6f
+  * supported rates - hexdump(len=12): 82 84 8b 96 24 30 48 6c 0c 12 18 60
+  * aid=1
+  * listen_interval=20
+  * capability=0x431
+  * flags set=0x4 mask=0x4
+wlan3: STA 30:f7:c5:15:ac:6f WPA: event 1 notification
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=0 addr=0xd0cd10 key_idx=0 set_tx=1 seq_len=0 key_len=0
+   addr=30:f7:c5:15:ac:6f
+IEEE 802.1X: Ignore STA - 802.1X not enabled or forced for WPS
+wlan3: STA 30:f7:c5:15:ac:6f WPA: start authentication
+WPA: 30:f7:c5:15:ac:6f WPA_PTK entering state INITIALIZE
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=0 addr=0xd0cd10 key_idx=0 set_tx=1 seq_len=0 key_len=0
+   addr=30:f7:c5:15:ac:6f
+wlan3: STA 30:f7:c5:15:ac:6f IEEE 802.1X: unauthorizing port
+WPA: 30:f7:c5:15:ac:6f WPA_PTK_GROUP entering state IDLE
+WPA: 30:f7:c5:15:ac:6f WPA_PTK entering state AUTHENTICATION
+WPA: 30:f7:c5:15:ac:6f WPA_PTK entering state AUTHENTICATION2
+WPA: Re-initialize GMK/Counter on first station
+GMK - hexdump(len=32): [REMOVED]
+Key Counter - hexdump(len=32): [REMOVED]
+GTK - hexdump(len=16): [REMOVED]
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=3 addr=0x4a6d8a key_idx=1 set_tx=1 seq_len=0 key_len=16
+   broadcast key
+WPA: Assign ANonce - hexdump(len=32): 48 2f e0 8f 94 32 0d 0a 94 f4 a6 e7 b2 6a 66 db ff 40 2c 02 29 b1 d5 5b c0 80 bf 4e 80 87 52 95
+WPA: 30:f7:c5:15:ac:6f WPA_PTK entering state INITPSK
+Searching a PSK for 30:f7:c5:15:ac:6f p2p_dev_addr=00:00:00:00:00:00 prev_psk=(nil)
+Searching a PSK for 30:f7:c5:15:ac:6f p2p_dev_addr=00:00:00:00:00:00 prev_psk=(nil)
+WPA: 30:f7:c5:15:ac:6f WPA_PTK entering state PTKSTART
+wlan3: STA 30:f7:c5:15:ac:6f WPA: sending 1/4 msg of 4-Way Handshake
+WPA: Send EAPOL(version=2 secure=0 mic=0 ack=1 install=0 pairwise=1 kde_len=0 keyidx=0 encr=0)
+WPA: Use EAPOL-Key timeout of 100 ms (retry counter 1)
+hostapd_new_assoc_sta: reschedule ap_handle_timer timeout for 30:f7:c5:15:ac:6f (300 seconds - ap_max_inactivity)
+nl80211: Drv Event 19 (NL80211_CMD_NEW_STATION) received for wlan3
+nl80211: New station 30:f7:c5:15:ac:6f
+wlan3: Event EAPOL_TX_STATUS (40) received
+IEEE 802.1X: 30:f7:c5:15:ac:6f TX status - version=2 type=3 length=95 - ack=1
+WPA: EAPOL-Key TX status for STA 30:f7:c5:15:ac:6f ack=1
+WPA: Increase initial EAPOL-Key 1/4 timeout by 1000 ms because of acknowledged frame
+wlan3: Event EAPOL_RX (26) received
+IEEE 802.1X: 121 bytes from 30:f7:c5:15:ac:6f
+   IEEE 802.1X: version=2 type=3 length=117
+WPA: Received EAPOL-Key from 30:f7:c5:15:ac:6f key_info=0x10a type=2 key_data_length=22
+WPA: Received Key Nonce - hexdump(len=32): 43 f9 3f 90 03 7a e4 2f bd 02 17 ef 7e fb 10 4c 7d 99 26 65 66 5a cd 2a d2 aa 2a ac aa 9c a9 cb
+WPA: Received Replay Counter - hexdump(len=8): 00 00 00 00 00 00 00 01
+wlan3: STA 30:f7:c5:15:ac:6f WPA: received EAPOL-Key frame (2/4 Pairwise)
+WPA: 30:f7:c5:15:ac:6f WPA_PTK entering state PTKCALCNEGOTIATING
+Searching a PSK for 30:f7:c5:15:ac:6f p2p_dev_addr=00:00:00:00:00:00 prev_psk=(nil)
+WPA: PTK derivation - A1=c4:e9:84:10:6b:df A2=30:f7:c5:15:ac:6f
+WPA: Nonce1 - hexdump(len=32): 48 2f e0 8f 94 32 0d 0a 94 f4 a6 e7 b2 6a 66 db ff 40 2c 02 29 b1 d5 5b c0 80 bf 4e 80 87 52 95
+WPA: Nonce2 - hexdump(len=32): 43 f9 3f 90 03 7a e4 2f bd 02 17 ef 7e fb 10 4c 7d 99 26 65 66 5a cd 2a d2 aa 2a ac aa 9c a9 cb
+WPA: PMK - hexdump(len=32): [REMOVED]
+WPA: PTK - hexdump(len=48): [REMOVED]
+WPA: 30:f7:c5:15:ac:6f WPA_PTK entering state PTKCALCNEGOTIATING2
+WPA: 30:f7:c5:15:ac:6f WPA_PTK entering state PTKINITNEGOTIATING
+wlan3: STA 30:f7:c5:15:ac:6f WPA: sending 3/4 msg of 4-Way Handshake
+WPA: Send EAPOL(version=2 secure=1 mic=1 ack=1 install=1 pairwise=1 kde_len=46 keyidx=1 encr=1)
+Plaintext EAPOL-Key Key Data - hexdump(len=56): [REMOVED]
+WPA: Use EAPOL-Key timeout of 100 ms (retry counter 1)
+wlan3: Event EAPOL_TX_STATUS (40) received
+IEEE 802.1X: 30:f7:c5:15:ac:6f TX status - version=2 type=3 length=151 - ack=1
+WPA: EAPOL-Key TX status for STA 30:f7:c5:15:ac:6f ack=1
+wlan3: Event EAPOL_RX (26) received
+IEEE 802.1X: 99 bytes from 30:f7:c5:15:ac:6f
+   IEEE 802.1X: version=2 type=3 length=95
+WPA: Received EAPOL-Key from 30:f7:c5:15:ac:6f key_info=0x30a type=2 key_data_length=0
+WPA: Received Key Nonce - hexdump(len=32): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+WPA: Received Replay Counter - hexdump(len=8): 00 00 00 00 00 00 00 02
+wlan3: STA 30:f7:c5:15:ac:6f WPA: received EAPOL-Key frame (4/4 Pairwise)
+WPA: 30:f7:c5:15:ac:6f WPA_PTK entering state PTKINITDONE
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=3 addr=0xd0cd10 key_idx=0 set_tx=1 seq_len=0 key_len=16
+   addr=30:f7:c5:15:ac:6f
+wlan3: AP-STA-CONNECTED 30:f7:c5:15:ac:6f
+wlan3: STA 30:f7:c5:15:ac:6f IEEE 802.1X: authorizing port
+wlan3: STA 30:f7:c5:15:ac:6f RADIUS: starting accounting session 577C32BE-00000000
+wlan3: STA 30:f7:c5:15:ac:6f WPA: pairwise key handshake completed (RSN)
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-26 stype=4 len=125
+nl80211: send_mlme - noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: Drv Event 60 (NL80211_CMD_FRAME_TX_STATUS) received for wlan3
+nl80211: Frame TX status event
+wlan3: Event TX_STATUS (18) received
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-29 stype=11 len=41
+wlan3: Event RX_MGMT (20) received
+mgmt::auth
+authentication: STA=38:aa:3c:cb:7a:d3 auth_alg=0 auth_transaction=1 status_code=0 wep=0
+  New STA
+ap_sta_add: register ap_handle_timer timeout for 38:aa:3c:cb:7a:d3 (300 seconds - ap_max_inactivity)
+wlan3: STA 38:aa:3c:cb:7a:d3 IEEE 802.11: authentication OK (open system)
+wlan3: STA 38:aa:3c:cb:7a:d3 MLME: MLME-AUTHENTICATE.indication(38:aa:3c:cb:7a:d3, OPEN_SYSTEM)
+wlan3: STA 38:aa:3c:cb:7a:d3 MLME: MLME-DELETEKEYS.request(38:aa:3c:cb:7a:d3)
+authentication reply: STA=38:aa:3c:cb:7a:d3 auth_alg=0 auth_transaction=2 resp=0 (IE len=0)
+nl80211: send_mlme - noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0xb0 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: Drv Event 60 (NL80211_CMD_FRAME_TX_STATUS) received for wlan3
+nl80211: Frame TX status event
+wlan3: Event TX_STATUS (18) received
+mgmt::auth cb
+wlan3: STA 38:aa:3c:cb:7a:d3 IEEE 802.11: authenticated
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-28 stype=0 len=96
+wlan3: Event RX_MGMT (20) received
+mgmt::assoc_req
+association request: STA=38:aa:3c:cb:7a:d3 capab_info=0x431 listen_interval=10
+  new AID 2
+wlan3: STA 38:aa:3c:cb:7a:d3 IEEE 802.11: association OK (aid 2)
+nl80211: send_mlme - noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x10 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: Drv Event 60 (NL80211_CMD_FRAME_TX_STATUS) received for wlan3
+nl80211: Frame TX status event
+wlan3: Event TX_STATUS (18) received
+mgmt::assoc_resp cb
+wlan3: STA 38:aa:3c:cb:7a:d3 IEEE 802.11: associated (aid 2)
+wlan3: STA 38:aa:3c:cb:7a:d3 MLME: MLME-ASSOCIATE.indication(38:aa:3c:cb:7a:d3)
+wlan3: STA 38:aa:3c:cb:7a:d3 MLME: MLME-DELETEKEYS.request(38:aa:3c:cb:7a:d3)
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=0 addr=0xd0b790 key_idx=0 set_tx=1 seq_len=0 key_len=0
+   addr=38:aa:3c:cb:7a:d3
+nl80211: sta_remove -> DEL_STATION wlan3 38:aa:3c:cb:7a:d3 --> -2 (No such file or directory)
+nl80211: Add STA 38:aa:3c:cb:7a:d3
+  * supported rates - hexdump(len=12): 82 84 8b 96 24 30 48 6c 0c 12 18 60
+  * aid=2
+  * listen_interval=10
+  * capability=0x431
+  * flags set=0x4 mask=0x4
+wlan3: STA 38:aa:3c:cb:7a:d3 WPA: event 1 notification
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=0 addr=0xd0b790 key_idx=0 set_tx=1 seq_len=0 key_len=0
+   addr=38:aa:3c:cb:7a:d3
+IEEE 802.1X: Ignore STA - 802.1X not enabled or forced for WPS
+wlan3: STA 38:aa:3c:cb:7a:d3 WPA: start authentication
+WPA: 38:aa:3c:cb:7a:d3 WPA_PTK entering state INITIALIZE
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=0 addr=0xd0b790 key_idx=0 set_tx=1 seq_len=0 key_len=0
+   addr=38:aa:3c:cb:7a:d3
+wlan3: STA 38:aa:3c:cb:7a:d3 IEEE 802.1X: unauthorizing port
+WPA: 38:aa:3c:cb:7a:d3 WPA_PTK_GROUP entering state IDLE
+WPA: 38:aa:3c:cb:7a:d3 WPA_PTK entering state AUTHENTICATION
+WPA: 38:aa:3c:cb:7a:d3 WPA_PTK entering state AUTHENTICATION2
+WPA: Assign ANonce - hexdump(len=32): 25 69 16 5d b2 51 c6 68 4d a7 8d d9 78 39 7d 21 ca fc c8 b0 66 52 fc e3 ea bf 30 13 33 f2 76 11
+WPA: 38:aa:3c:cb:7a:d3 WPA_PTK entering state INITPSK
+Searching a PSK for 38:aa:3c:cb:7a:d3 p2p_dev_addr=00:00:00:00:00:00 prev_psk=(nil)
+Searching a PSK for 38:aa:3c:cb:7a:d3 p2p_dev_addr=00:00:00:00:00:00 prev_psk=(nil)
+WPA: 38:aa:3c:cb:7a:d3 WPA_PTK entering state PTKSTART
+wlan3: STA 38:aa:3c:cb:7a:d3 WPA: sending 1/4 msg of 4-Way Handshake
+WPA: Send EAPOL(version=2 secure=0 mic=0 ack=1 install=0 pairwise=1 kde_len=0 keyidx=0 encr=0)
+WPA: Use EAPOL-Key timeout of 100 ms (retry counter 1)
+hostapd_new_assoc_sta: reschedule ap_handle_timer timeout for 38:aa:3c:cb:7a:d3 (300 seconds - ap_max_inactivity)
+nl80211: Drv Event 19 (NL80211_CMD_NEW_STATION) received for wlan3
+nl80211: New station 38:aa:3c:cb:7a:d3
+wlan3: Event EAPOL_TX_STATUS (40) received
+IEEE 802.1X: 38:aa:3c:cb:7a:d3 TX status - version=2 type=3 length=95 - ack=1
+WPA: EAPOL-Key TX status for STA 38:aa:3c:cb:7a:d3 ack=1
+WPA: Increase initial EAPOL-Key 1/4 timeout by 1000 ms because of acknowledged frame
+wlan3: Event EAPOL_RX (26) received
+IEEE 802.1X: 121 bytes from 38:aa:3c:cb:7a:d3
+   IEEE 802.1X: version=1 type=3 length=117
+WPA: Received EAPOL-Key from 38:aa:3c:cb:7a:d3 key_info=0x10a type=2 key_data_length=22
+WPA: Received Key Nonce - hexdump(len=32): 22 77 66 f0 c4 09 a9 25 c2 dc 6b ed 4f dd fa 73 2a 5b 02 ed 04 19 b9 dc 49 68 8f 9b 4a bd aa ec
+WPA: Received Replay Counter - hexdump(len=8): 00 00 00 00 00 00 00 01
+wlan3: STA 38:aa:3c:cb:7a:d3 WPA: received EAPOL-Key frame (2/4 Pairwise)
+WPA: 38:aa:3c:cb:7a:d3 WPA_PTK entering state PTKCALCNEGOTIATING
+Searching a PSK for 38:aa:3c:cb:7a:d3 p2p_dev_addr=00:00:00:00:00:00 prev_psk=(nil)
+WPA: PTK derivation - A1=c4:e9:84:10:6b:df A2=38:aa:3c:cb:7a:d3
+WPA: Nonce1 - hexdump(len=32): 25 69 16 5d b2 51 c6 68 4d a7 8d d9 78 39 7d 21 ca fc c8 b0 66 52 fc e3 ea bf 30 13 33 f2 76 11
+WPA: Nonce2 - hexdump(len=32): 22 77 66 f0 c4 09 a9 25 c2 dc 6b ed 4f dd fa 73 2a 5b 02 ed 04 19 b9 dc 49 68 8f 9b 4a bd aa ec
+WPA: PMK - hexdump(len=32): [REMOVED]
+WPA: PTK - hexdump(len=48): [REMOVED]
+WPA: 38:aa:3c:cb:7a:d3 WPA_PTK entering state PTKCALCNEGOTIATING2
+WPA: 38:aa:3c:cb:7a:d3 WPA_PTK entering state PTKINITNEGOTIATING
+wlan3: STA 38:aa:3c:cb:7a:d3 WPA: sending 3/4 msg of 4-Way Handshake
+WPA: Send EAPOL(version=2 secure=1 mic=1 ack=1 install=1 pairwise=1 kde_len=46 keyidx=1 encr=1)
+Plaintext EAPOL-Key Key Data - hexdump(len=56): [REMOVED]
+WPA: Use EAPOL-Key timeout of 100 ms (retry counter 1)
+wlan3: Event EAPOL_TX_STATUS (40) received
+IEEE 802.1X: 38:aa:3c:cb:7a:d3 TX status - version=2 type=3 length=151 - ack=1
+WPA: EAPOL-Key TX status for STA 38:aa:3c:cb:7a:d3 ack=1
+wlan3: Event EAPOL_RX (26) received
+IEEE 802.1X: 99 bytes from 38:aa:3c:cb:7a:d3
+   IEEE 802.1X: version=1 type=3 length=95
+WPA: Received EAPOL-Key from 38:aa:3c:cb:7a:d3 key_info=0x30a type=2 key_data_length=0
+WPA: Received Key Nonce - hexdump(len=32): 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+WPA: Received Replay Counter - hexdump(len=8): 00 00 00 00 00 00 00 02
+wlan3: STA 38:aa:3c:cb:7a:d3 WPA: received EAPOL-Key frame (4/4 Pairwise)
+WPA: 38:aa:3c:cb:7a:d3 WPA_PTK entering state PTKINITDONE
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=3 addr=0xd0b790 key_idx=0 set_tx=1 seq_len=0 key_len=16
+   addr=38:aa:3c:cb:7a:d3
+wlan3: AP-STA-CONNECTED 38:aa:3c:cb:7a:d3
+wlan3: STA 38:aa:3c:cb:7a:d3 IEEE 802.1X: authorizing port
+wlan3: STA 38:aa:3c:cb:7a:d3 RADIUS: starting accounting session 577C32BE-00000001
+wlan3: STA 38:aa:3c:cb:7a:d3 WPA: pairwise key handshake completed (RSN)
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-74 stype=4 len=143
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-29 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-29 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-27 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-27 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-29 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-30 stype=4 len=116
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-72 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-72 stype=4 len=80
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-72 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-80 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-76 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-78 stype=4 len=80
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-75 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-76 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-42 stype=4 len=149
+nl80211: send_mlme - noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: Drv Event 60 (NL80211_CMD_FRAME_TX_STATUS) received for wlan3
+nl80211: Frame TX status event
+wlan3: Event TX_STATUS (18) received
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-40 stype=4 len=149
+nl80211: send_mlme - noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: Drv Event 60 (NL80211_CMD_FRAME_TX_STATUS) received for wlan3
+nl80211: Frame TX status event
+wlan3: Event TX_STATUS (18) received
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-41 stype=4 len=149
+nl80211: send_mlme - noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: Drv Event 60 (NL80211_CMD_FRAME_TX_STATUS) received for wlan3
+nl80211: Frame TX status event
+wlan3: Event TX_STATUS (18) received
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-41 stype=4 len=149
+nl80211: send_mlme - noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: Drv Event 60 (NL80211_CMD_FRAME_TX_STATUS) received for wlan3
+nl80211: Frame TX status event
+wlan3: Event TX_STATUS (18) received
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-47 stype=4 len=149
+nl80211: send_mlme - noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: Drv Event 60 (NL80211_CMD_FRAME_TX_STATUS) received for wlan3
+nl80211: Frame TX status event
+wlan3: Event TX_STATUS (18) received
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-46 stype=4 len=149
+nl80211: send_mlme - noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: Drv Event 60 (NL80211_CMD_FRAME_TX_STATUS) received for wlan3
+nl80211: Frame TX status event
+wlan3: Event TX_STATUS (18) received
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-48 stype=4 len=149
+nl80211: send_mlme - noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: Drv Event 60 (NL80211_CMD_FRAME_TX_STATUS) received for wlan3
+nl80211: Frame TX status event
+wlan3: Event TX_STATUS (18) received
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-47 stype=4 len=149
+nl80211: send_mlme - noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: Drv Event 60 (NL80211_CMD_FRAME_TX_STATUS) received for wlan3
+nl80211: Frame TX status event
+wlan3: Event TX_STATUS (18) received
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-87 stype=4 len=143
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-82 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-83 stype=4 len=82
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-75 stype=4 len=82
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-76 stype=4 len=82
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-86 stype=4 len=55
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-89 stype=4 len=55
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-48 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-49 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-49 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-46 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-50 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-52 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-54 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-47 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-48 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-45 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-49 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-49 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-55 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-49 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-49 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-45 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-49 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-50 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-84 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-84 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-81 stype=4 len=120
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-78 stype=4 len=120
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-64 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-65 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-56 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-56 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-58 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-59 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-56 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-56 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-67 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-81 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-59 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-58 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-59 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-59 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-66 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-57 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-61 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-59 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-63 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-62 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-82 stype=4 len=100
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-84 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-86 stype=4 len=133
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-87 stype=4 len=80
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-65 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-55 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-54 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-52 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-55 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-54 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-56 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-54 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-55 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-53 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-50 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-54 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-64 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-52 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-51 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-51 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-54 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-54 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-71 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-71 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-67 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-68 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-70 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-70 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: Ignore RTM_NEWLINK event for foreign ifindex 15
+VLAN: vlan_newlink(mon0)
+nl80211: Ignore RTM_NEWLINK event for foreign ifindex 15
+VLAN: vlan_newlink(mon0)
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-84 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-83 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-84 stype=4 len=123
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-85 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-64 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-59 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-59 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-33 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-23 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-24 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-24 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-70 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-65 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-57 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-33 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-34 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-24 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-22 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-81 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-26 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-27 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-24 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-27 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-27 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-81 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-74 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-74 stype=4 len=80
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-74 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-78 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-88 stype=4 len=55
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-85 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-82 stype=4 len=133
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-80 stype=4 len=133
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-27 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-24 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-24 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-27 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-27 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-69 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-64 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-65 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-23 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-23 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-26 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-76 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-69 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-37 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-26 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-27 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-24 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-26 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-27 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-75 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-75 stype=4 len=83
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-75 stype=4 len=83
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-79 stype=4 len=83
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-73 stype=4 len=83
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-74 stype=4 len=83
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-73 stype=4 len=83
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-81 stype=4 len=133
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-84 stype=4 len=133
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-77 stype=4 len=83
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-71 stype=4 len=83
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-72 stype=4 len=83
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-83 stype=4 len=52
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-71 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-59 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-33 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-24 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-23 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-23 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-26 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-26 stype=4 len=140
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-59 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-24 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-24 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-26 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-26 stype=4 len=151
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-65 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-33 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-25 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-26 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-23 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-23 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-26 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-26 stype=4 len=145
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-70 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-71 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-70 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-71 stype=4 len=236
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-92 stype=4 len=83
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-85 stype=4 len=80
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-82 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-82 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-86 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-81 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-81 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-85 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-72 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-72 stype=4 len=80
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-72 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+nl80211: BSS Event 59 (NL80211_CMD_FRAME) received for wlan3
+nl80211: RX frame freq=2437 ssi_signal=-75 stype=4 len=70
+nl80211: send_mlme - noack=1 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0x50 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+RTM_NEWLINK: ifi_index=13 ifname=wlan3 master=14 operstate=6 ifi_flags=0x11043 ([UP][RUNNING][LOWER_UP])
+nl80211: Add ifindex 14 for bridge br0
+nl80211: Add own interface ifindex 14
+nl80211: Ignore RTM_NEWLINK event for foreign ifindex 2
+VLAN: vlan_newlink(wlan3)
+VLAN: vlan_newlink(eth0)
+RTM_NEWLINK: ifi_index=14 ifname=br0 operstate=2 linkmode=0 ifi_flags=0x1002 ()
+nl80211: Ignore interface down event since interface br0 is up
+VLAN: vlan_newlink(br0)
+l2_packet_receive - recvfrom: Network is down
+RTM_NEWLINK: ifi_index=13 ifname=wlan3 operstate=6 linkmode=0 master=14 ifi_flags=0x11043 ([UP][RUNNING][LOWER_UP])
+RTM_NEWLINK: ifi_index=13 ifname=wlan3 master=14 operstate=6 ifi_flags=0x11043 ([UP][RUNNING][LOWER_UP])
+nl80211: Add ifindex 14 for bridge br0
+nl80211: Add own interface ifindex 14
+RTM_DELLINK: Interface 'wlan3' removed - mark if_removed=1
+wlan3: Event INTERFACE_STATUS (5) received
+Unknown event 5
+nl80211: Remove ifindex 14 for bridge br0
+RTM_NEWLINK: ifi_index=13 ifname=wlan3 operstate=6 linkmode=0 ifi_flags=0x11043 ([UP][RUNNING][LOWER_UP])
+nl80211: Mark if_removed=0 for wlan3 based on RTM_NEWLINK event
+wlan3: Event INTERFACE_STATUS (5) received
+Unknown event 5
+nl80211: Ignore RTM_NEWLINK event for foreign ifindex 2
+nl80211: Ignore RTM_NEWLINK event for foreign ifindex 2
+nl80211: Ignore RTM_DELLINK event for foreign ifindex 2
+nl80211: Ignore RTM_NEWLINK event for foreign ifindex 2
+VLAN: vlan_newlink(wlan3)
+VLAN: vlan_newlink(wlan3)
+VLAN: vlan_dellink(wlan3)
+VLAN: vlan_newlink(wlan3)
+VLAN: vlan_newlink(eth0)
+VLAN: vlan_newlink(eth0)
+VLAN: vlan_dellink(eth0)
+VLAN: vlan_newlink(eth0)
+RTM_DELLINK: Interface 'br0' removed
+wlan3: Event INTERFACE_STATUS (5) received
+Unknown event 5
+VLAN: vlan_dellink(br0)
+Signal 15 received - terminating
+hostapd_interface_deinit_free(0xd07d90)
+hostapd_interface_deinit_free: num_bss=1 conf->num_bss=1
+hostapd_interface_deinit(0xd07d90)
+hostapd_bss_deinit: deinit bss wlan3
+wlan3: STA 38:aa:3c:cb:7a:d3 MLME: MLME-DEAUTHENTICATE.indication(38:aa:3c:cb:7a:d3, 1)
+wlan3: STA 38:aa:3c:cb:7a:d3 MLME: MLME-DELETEKEYS.request(38:aa:3c:cb:7a:d3)
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=0 addr=0xd0b790 key_idx=0 set_tx=1 seq_len=0 key_len=0
+   addr=38:aa:3c:cb:7a:d3
+Removing station 38:aa:3c:cb:7a:d3
+wlan3: AP-STA-DISCONNECTED 38:aa:3c:cb:7a:d3
+nl80211: sta_remove -> DEL_STATION wlan3 38:aa:3c:cb:7a:d3 --> 0 (Success)
+ap_free_sta: cancel ap_handle_timer for 38:aa:3c:cb:7a:d3
+wlan3: STA 30:f7:c5:15:ac:6f MLME: MLME-DEAUTHENTICATE.indication(30:f7:c5:15:ac:6f, 1)
+wlan3: STA 30:f7:c5:15:ac:6f MLME: MLME-DELETEKEYS.request(30:f7:c5:15:ac:6f)
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=0 addr=0xd0cd10 key_idx=0 set_tx=1 seq_len=0 key_len=0
+   addr=30:f7:c5:15:ac:6f
+Removing station 30:f7:c5:15:ac:6f
+wlan3: AP-STA-DISCONNECTED 30:f7:c5:15:ac:6f
+nl80211: sta_remove -> DEL_STATION wlan3 30:f7:c5:15:ac:6f --> 0 (Success)
+ap_free_sta: cancel ap_handle_timer for 30:f7:c5:15:ac:6f
+wlan3: Flushing old station entries
+nl80211: flush -> DEL_STATION wlan3 (all)
+wlan3: Deauthenticate all stations
+nl80211: send_mlme - noack=0 freq=0 no_cck=0 offchanok=0 wait_time=0 fc=0xc0 nlmode=3
+nl80211: send_mlme -> send_frame
+nl80211: send_frame - Use bss->freq=2437
+nl80211: send_frame -> send_frame_cmd
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=0 addr=(nil) key_idx=0 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=0 addr=(nil) key_idx=1 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=0 addr=(nil) key_idx=2 set_tx=0 seq_len=0 key_len=0
+wpa_driver_nl80211_set_key: ifindex=13 (wlan3) alg=0 addr=(nil) key_idx=3 set_tx=0 seq_len=0 key_len=0
+hostapd_cleanup(hapd=0xd09110 (wlan3))
+hostapd_free_hapd_data(wlan3)
+hostapd_interface_deinit_free: driver=0x4bc9e0 drv_priv=0xd0a000 -> hapd_deinit
+Could not remove interface wlan3 from bridge br0: No such device
+nl80211: Failed to remove interface wlan3 from bridge br0: No such device
+nl80211: Remove monitor interface: refcount=0
+nl80211: Remove beacon (ifindex=13)
+netlink: Operstate: ifindex=13 linkmode=0 (kernel-control), operstate=6 (IF_OPER_UP)
+nl80211: Set mode ifindex 13 iftype 2 (STATION)
+nl80211: Teardown AP(wlan3) - device_ap_sme=0 use_monitor=0
+nl80211: Unsubscribe mgmt frames handle 0x8888888888580f29 (AP teardown)
+hostapd_interface_free(0xd07d90)
+hostapd_interface_free: free hapd 0xd09110
+hostapd_cleanup_iface(0xd07d90)
+hostapd_cleanup_iface_partial(0xd07d90)
+hostapd_cleanup_iface: free iface=0xd07d90
